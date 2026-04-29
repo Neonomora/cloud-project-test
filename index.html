@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Dev Project</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 48px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #1a1a2e;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 13px;
+    }
+
+    .info-row:last-child { border-bottom: none; }
+
+    .info-row span:first-child { color: #888; }
+    .info-row span:last-child  { color: #1a1a2e; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Web Server — Private Subnet</div>
+    <h1>AWS Dev Project</h1>
+    <p>Halaman ini di-serve oleh Nginx dari dalam private subnet.</p>
+
+    <div class="info-row">
+      <span>Server</span>
+      <span>Web Server (Nginx)</span>
+    </div>
+    <div class="info-row">
+      <span>Subnet</span>
+      <span>private-1a · 10.0.5.0/24</span>
+    </div>
+    <div class="info-row">
+      <span>Status</span>
+      <span>Running</span>
+    </div>
+  </div>
+</body>
+</html>
